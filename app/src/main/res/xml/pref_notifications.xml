@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="notifications_header"
+        android:title="@string/pref_header_notifications">
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <CheckBoxPreference
+            android:key="notifications_check"
+            android:title="@string/pref_title_dj_notifications"
+            android:summary="@string/pref_description_dj_notifications"
+            android:defaultValue="true"
+            android:enabled="false"/>
+
+        <ListPreference
+            android:key="notifications_frequency"
+            android:dependency="notifications_check"
+            android:title="@string/pref_title_dj_notification_frequency"
+            android:entries="@array/pref_dj_notification_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:defaultValue="5"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

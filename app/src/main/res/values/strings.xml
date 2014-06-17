@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Eden Radio</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblCurrentDJ">Current DJ</string>
+    <string name="lblListeners">Listeners</string>
+    <string name="lblCurrentSong">Current Song</string>
+    <string name="lblLastPlayed">Last Played</string>
+    <string name="txtFavesHeader">My favorite songs</string>
+    <string name="title_activity_favorites">Favorites</string>
+    <string name="title_activity_splash_screen">Splash Screen</string>
+    <string name="title_activity_splash">SplashActivity</string><string name="txtLoading">Loading...</string>
+
+</resources>

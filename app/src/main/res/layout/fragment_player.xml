@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/player_color">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlay"
+        android:src="@drawable/ic_play"
+        android:onClick="play"
+        android:background="@color/player_color"
+        android:padding="@dimen/activity_player_padding" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/btnFave"
+        android:onClick="fave"
+        android:src="@drawable/ic_fave"
+        android:background="@color/player_color"
+        android:padding="@dimen/activity_player_padding" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/txtPlayerCurrentSong"
+        android:textColor="@color/text_color"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="@dimen/activity_player_text_margin"
+        android:scrollHorizontally="true"/>
+
+
+</LinearLayout>

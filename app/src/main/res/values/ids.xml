@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lstFaves" type="id">lstFaves</item>
+    <item name="txtFavesHeader" type="id">txtFavesHeader</item>
+    <item name="lblFavorites" type="id">lblFavorites</item>
+    <item name="playerLayout" type="id">playerLayout</item>
+    <item name="playerControls" type="id">playerControls</item>
+    <item name="txtPlayerCurrentSong" type="id">txtPlayerCurrentSong</item>
+    <item name="txtLoading" type="id">txtLoading</item>
+    <item name="imgSplash" type="id">imgSplash</item>
+    <item name="btnPlay" type="id">btnPlay</item>
+    <item name="btnFave" type="id">btnFave</item>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edenofthewest.edenradio.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_eden"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.edenofthewest.edenradio.app.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:name="com.edenofthewest.edenradio.app.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.edenofthewest.edenradio.app.FavoritesActivity"
+            android:label="@string/title_activity_favorites" >
+        </activity>
+        <activity
+            android:name="com.edenofthewest.edenradio.app.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <service
+            android:name=".EdenService"
+            android:enabled="true"/>
+        <service
+            android:name=".StreamService"
+            android:enabled="true"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
